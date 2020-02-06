@@ -5,10 +5,34 @@ nav {
     margin-bottom: 20px;
     align-items: flex-end;
     
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        a {
+            width: 50%;
+            padding: 15px;
+        }
+        widows: 50%;
+    }
 }
+
 
 nav .logo {
     height: 100px;
+
+    
+    @media (max-width: 500px) {
+       .logo {
+        display: flex;
+        align-items: center;
+        
+        flex-wrap: wrap;
+            width: 50%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    } 
+    }
+    
 }
 
 nav a {
@@ -19,7 +43,22 @@ nav a {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: orange;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        
+        
+        nav a { 
+            display: flex;
+            width: 100%;
+            padding: 15px;
+            align-content: center;
+            
+            
+        }    
+    }
+    
 }
+
 
 
 

@@ -157,8 +157,28 @@ nav {
   margin-bottom: 20px;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    widows: 50%;
+  }
+  nav a {
+    width: 50%;
+    padding: 15px;
+  }
+}
 nav .logo {
   height: 100px;
+}
+@media (max-width: 500px) {
+  nav .logo .logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 nav a {
   text-decoration: none;
@@ -169,12 +189,31 @@ nav a {
   border-bottom-right-radius: 10px;
   background-color: orange;
 }
+@media (max-width: 500px) {
+  nav a {
+    flex-direction: column;
+  }
+  nav a nav a {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    align-content: center;
+  }
+}
 nav a:hover {
   background-color: greenyellow;
 }
 footer {
   width: 100%;
   background: #2C9DA6;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 footer nav {
   width: 60%;
@@ -196,12 +235,26 @@ footer nav a {
   border-radius: 10px;
   height: 85%;
 }
+@media (max-width: 500px) {
+  .top-middle-img {
+    width: 60%;
+    height: 50%;
+  }
+}
 .top-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 20px;
   border-bottom: 1px dashed #2C9DA6;
+}
+@media (max-width: 500px) {
+  .top-content .text-container p {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .top-content .text-container {
   width: 100%;
